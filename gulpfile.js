@@ -9,6 +9,7 @@ function bundle() {
     // zip
     return src([
         "**/*",
+        "!.husky/**",
         "!node_modules/**",
         "!src/**",
         "!temp/**",
