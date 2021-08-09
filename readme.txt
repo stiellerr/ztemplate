@@ -28,7 +28,7 @@ a) if running nodejs behind a proxy ie at work
 8) update the 'name' key in your package.json to reflect the name of your project. 
 9) type "npm install". hit enter.
 10) if you are working behind a proxy and have followed the instructions from step 7 above
-	a) copy the file cjpeg.exe from the temp folder to node_modules -> mozjpeg -> vendor.
+		a) copy the file cjpeg.exe from the temp folder to node_modules -> mozjpeg -> vendor.
  
 
 	
