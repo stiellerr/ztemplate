@@ -11,6 +11,10 @@
         "build": "npm run lint && npm run format && webpack --mode=production && gulp bundle",
         "prepare": "husky install"
     },
+    "lint-staged": {
+        "src/**/*.js": "eslint",
+        "**/*.{js,json,css,scss}": "prettier --write"
+    },
     "author": "",
     "license": "ISC",
     "devDependencies": {
@@ -29,9 +33,10 @@
         "file-loader": "^6.2.0",
         "gulp": "^4.0.2",
         "gulp-zip": "^5.1.0",
-        "husky": "^7.0.1",
+        "husky": "^7.0.0",
         "image-minimizer-webpack-plugin": "^2.2.0",
         "imagemin-mozjpeg": "^9.0.0",
+        "lint-staged": "^11.1.2",
         "mini-css-extract-plugin": "^2.2.0",
         "postcss-loader": "^6.1.1",
         "prettier": "^2.3.2",
