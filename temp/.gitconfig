@@ -1,0 +1,6 @@
+[user]
+	email = reece@stieller.com
+	name = stiellerr
+[http]
+	proxy = http://202.175.128.101:80
+	sslVerify = false
