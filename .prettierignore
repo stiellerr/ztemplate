@@ -1,4 +1,5 @@
 .husky
+dist
 node_modules
 packaged
-dist
+

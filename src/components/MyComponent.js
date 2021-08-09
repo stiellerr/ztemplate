@@ -1,12 +1,14 @@
 import React from "react";
 //import ReactDOM from "react-dom";
 
+/* eslint-disable react/prop-types */
 import "./MyComponent.scss";
 
 class MyComponent extends React.Component {
     render() {
         console.log("Hello React!");
-        //return <h1>{this.props.title}</h1>
+        return <h1>{this.props.title}</h1>;
+        /*
         return (
             <div className="x">
                 {[1, 2, 3].map((item, i) => (
@@ -14,6 +16,7 @@ class MyComponent extends React.Component {
                 ))}
             </div>
         );
+        */
         //return React.createElement('h1', null, `Title: ${this.props.title}`);
     }
 }

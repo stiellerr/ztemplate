@@ -1,24 +1,23 @@
-const { src, dest } = require("gulp");
-const zip = require("gulp-zip");
-const { name } = require("./package.json");
-const del = require("del");
+import { src, dest } from "gulp";
+import zip from "gulp-zip";
+import { name } from "./package.json";
+import del from "del";
 
-function bundle() {
-    // delete packaged folder
-    del(["packaged"]);
-    // zip
+export const compress = () => {
+    del("packaged");
     return src([
         "**/*",
         "!.husky/**",
         "!node_modules/**",
+        "!packaged/**",
         "!src/**",
         "!temp/**",
-        "!packaged/**",
+        "!.babelrc",
         "!.eslintrc.js",
         "!.gitignore",
         "!.prettierignore",
         "!.prettierrc",
-        "!gulpfile.js",
+        "!gulpfile.babel.js",
         "!package-lock.json",
         "!package.json",
         "!readme.txt",
@@ -26,6 +25,6 @@ function bundle() {
     ])
         .pipe(zip(`${name}.zip`))
         .pipe(dest("packaged"));
-}
+};
 
-exports.bundle = bundle;
+export default compress;
