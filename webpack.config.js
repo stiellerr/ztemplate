@@ -8,7 +8,6 @@ const TerserPlugin = require("terser-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 module.exports = (a, b) => {
-
     return {
         output: {
             filename: "js/script.js",

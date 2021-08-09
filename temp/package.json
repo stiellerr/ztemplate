@@ -8,7 +8,7 @@
         "format": "prettier --write \"**/*.{js,json,css,scss}\"",
         "lint": "eslint src",
         "start": "webpack --mode=development --watch",
-        "build": "npm run lint && npm run format && webpack --mode=production"
+        "build": "npm run lint && npm run format && webpack --mode=production && gulp bundle"
     },
     "author": "",
     "license": "ISC",
@@ -20,11 +20,14 @@
         "babel-loader": "^8.2.2",
         "css-loader": "^6.2.0",
         "css-minimizer-webpack-plugin": "^3.0.2",
+        "del": "^6.0.0",
         "eslint": "^7.32.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-react": "^7.24.0",
         "eslint-webpack-plugin": "^3.0.1",
         "file-loader": "^6.2.0",
+        "gulp": "^4.0.2",
+        "gulp-zip": "^5.1.0",
         "imagemin-mozjpeg": "file:/./temp/imagemin-mozjpeg-9.0.0.tgz",
         "image-minimizer-webpack-plugin": "^2.2.0",
         "mini-css-extract-plugin": "^2.2.0",
