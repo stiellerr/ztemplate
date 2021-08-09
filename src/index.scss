@@ -1,0 +1,27 @@
+/*
+body {
+    background-color: rgb(49, 121, 47);
+}
+
+.x {
+    color: blue;
+    transform: rotate(25deg);
+}
+*/
+
+// font awesome
+
+$fa-font-path: "@fortawesome/fontawesome-free/webfonts";
+/*
+@import "~@fortawesome/fontawesome-free/scss/variables";
+@import "~@fortawesome/fontawesome-free/scss/mixins";
+@import "~@fortawesome/fontawesome-free/scss/core";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/fixed-width";
+*/
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/brands";
