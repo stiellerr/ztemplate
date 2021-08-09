@@ -13,7 +13,10 @@
     },
     "lint-staged": {
         "src/**/*.js": "eslint",
-        "**/*.{js,json,css,scss}": "prettier --write"
+        "**/*.{js,json,css,scss}": [
+            "prettier --write",
+            "git add"
+        ]
     },
     "author": "",
     "license": "ISC",
