@@ -5,7 +5,7 @@ a) if running nodejs behind a proxy ie at work
 		proxy=http://202.175.128.101:80/		format => proxy:port
 		https-proxy=http://202.175.128.101:80/	format => proxy:port
 		strict-ssl=false
-	c) there is a pre configured file in the temp directory, should you wish to use it.
+	c) there is a pre configured file in the repo temp directory, should you wish to use it.
 	d) create a .gitconfig file inside your user directory ie "C:\Users\stiell11"
 	e) add the contents below.
 		[user]
@@ -14,7 +14,7 @@ a) if running nodejs behind a proxy ie at work
 		[http]
 			proxy = http://202.175.128.101:80	format => proxy:port
 			sslVerify = false
-	f) there is a pre configured file in the temp directory, should you wish to use it.
+	f) there is a pre configured file in the repo temp directory, should you wish to use it.
 	
 1) Create a folder with an appropriate name for your project.
 2) Open cmd, type "cd" and drag the folder into the cmd window, hit enter.
